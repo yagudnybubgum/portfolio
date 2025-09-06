@@ -1,0 +1,218 @@
+/* Intro component styles based on Figma design */
+
+.intro {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1025px) */
+.intro-desktop {
+  display: block;
+  padding: 120px;
+}
+
+.intro-desktop .intro-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-desktop .intro-left {
+  width: 568px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.intro-desktop .intro-right {
+  width: 568px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.intro-desktop .intro-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro-desktop .intro-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Tablet (768px-1024px) */
+.intro-tablet {
+  display: none;
+  padding: 120px 16px;
+}
+
+.intro-tablet .intro-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.intro-tablet .intro-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.intro-tablet .intro-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 0;
+}
+
+.intro-tablet .intro-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro-tablet .intro-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Mobile (<=767px) */
+.intro-mobile {
+  display: none;
+  padding: 64px 16px;
+}
+
+.intro-mobile .intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.intro-mobile .intro-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.intro-mobile .intro-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.intro-mobile .intro-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro-mobile .intro-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Common styles */
+.intro-title {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.intro-text {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.intro-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+}
+
+.intro-meta-label {
+  color: #b3b3b3;
+}
+
+.intro-meta-value {
+  color: #ffffff;
+}
+
+/* Mobile specific styles */
+.intro-mobile .intro-title {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.intro-mobile .intro-text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+.intro-mobile .intro-meta-row {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .intro-desktop {
+    display: none;
+  }
+  
+  .intro-tablet {
+    display: block;
+  }
+  
+  .intro-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-desktop {
+    display: none;
+  }
+  
+  .intro-tablet {
+    display: none;
+  }
+  
+  .intro-mobile {
+    display: block;
+  }
+}

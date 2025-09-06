@@ -1,0 +1,110 @@
+/* Base */
+.header {
+  width: 100%;
+  background-color: transparent;
+  font-family: var(--font-family-inter);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-dropdown);
+  mix-blend-mode: difference;
+}
+
+/* Desktop (>=1025px) */
+.header-desktop {
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.header-desktop .desktop-content {
+  max-width: 1440px; /* 1200 content + 120 side paddings */
+  width: 100%;
+  padding: 0 var(--spacing-120);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-desktop .left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-32);
+}
+
+.home {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-20);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tagline {
+  color: var(--color-white);
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-18);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-24);
+}
+
+.nav-btn, .cta {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-18);
+  letter-spacing: var(--letter-spacing-small);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.nav-btn:hover, .cta:hover { 
+  color: var(--color-gray-light); 
+}
+
+/* Mobile (<=1024px) */
+.header-mobile { display: none; }
+
+@media (max-width: 1024px) {
+  .header-desktop { display: none; }
+  .header-mobile {
+    display: flex;
+    height: 48.8px;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-content {
+    width: 100%;
+    padding: 0 var(--spacing-16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    flex: 1 1 auto;
+  }
+  .home { font-size: var(--font-size-16); line-height: var(--line-height-16); }
+  .cta { font-size: var(--font-size-16); line-height: var(--line-height-16); }
+}
+
+/* Tablet / fluid: 1025px–1440px with 16px side paddings */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .header-desktop .desktop-content {
+    max-width: 100%;
+    padding: 0 var(--spacing-16);
+  }
+}
+
+

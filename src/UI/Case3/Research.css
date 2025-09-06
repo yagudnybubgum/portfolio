@@ -1,0 +1,223 @@
+/* Research component styles based on Figma design */
+
+.research {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1441px) */
+.research-desktop {
+  display: block;
+  padding: 120px;
+}
+
+.research-desktop .research-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.research-desktop .research-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.research-desktop .research-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-desktop .research-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.research-desktop .research-card {
+  flex: 1;
+  min-width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Tablet (768px-1440px) */
+.research-tablet {
+  display: none;
+  padding: 120px 16px;
+}
+
+.research-tablet .research-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.research-tablet .research-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.research-tablet .research-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.research-tablet .research-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.research-tablet .research-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Mobile (<=767px) */
+.research-mobile {
+  display: none;
+  padding: 64px 16px;
+}
+
+.research-mobile .research-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.research-mobile .research-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.research-mobile .research-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-mobile .research-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.research-mobile .research-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Common styles */
+.research-title {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.research-card-title {
+  font-family: var(--font-family-inter);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.research-card-text {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Mobile specific styles */
+.research-mobile .research-title {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.research-mobile .research-card-title {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+}
+
+.research-mobile .research-card-text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .research-desktop {
+    display: none;
+  }
+  
+  .research-tablet {
+    display: block;
+  }
+  
+  .research-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .research-desktop {
+    display: none;
+  }
+  
+  .research-tablet {
+    display: none;
+  }
+  
+  .research-mobile {
+    display: block;
+  }
+}

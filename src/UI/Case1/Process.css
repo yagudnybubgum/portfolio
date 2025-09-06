@@ -1,0 +1,205 @@
+/* Process component styles based on Figma design */
+
+.process {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1441px) */
+.process-desktop {
+  display: block;
+  padding: 120px;
+}
+
+.process-desktop .process-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.process-desktop .process-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.process-desktop .process-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet (768px-1440px) */
+.process-tablet {
+  display: none;
+  padding: 120px 16px;
+}
+
+.process-tablet .process-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.process-tablet .process-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.process-tablet .process-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Mobile (<=767px) */
+.process-mobile {
+  display: none;
+  padding: 64px 16px;
+}
+
+.process-mobile .process-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.process-mobile .process-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.process-mobile .process-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styles */
+.process-title {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.process-text {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0 0 24px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.process-key {
+  margin-top: 0;
+}
+
+.process-key-title {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0 0 16px 0;
+}
+
+.process-key-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-key-item {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0 0 8px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.process-key-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile specific styles */
+.process-mobile .process-title {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.process-mobile .process-text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
+}
+
+.process-mobile .process-key-title {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-bottom: 12px;
+}
+
+.process-mobile .process-key-item {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .process-desktop {
+    display: none;
+  }
+  
+  .process-tablet {
+    display: block;
+  }
+  
+  .process-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .process-desktop {
+    display: none;
+  }
+  
+  .process-tablet {
+    display: none;
+  }
+  
+  .process-mobile {
+    display: block;
+  }
+}

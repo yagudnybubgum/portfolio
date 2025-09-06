@@ -1,0 +1,182 @@
+/* Case2 component styles based on Figma design */
+
+.case2 {
+  width: 100%;
+  background-color: var(--color-page-bg);
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop Hero (>=1025px) */
+.case2-hero-desktop {
+  display: block;
+  width: 100%;
+}
+
+.case2-hero-desktop .case2-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet Hero (768px-1024px) */
+.case2-hero-tablet {
+  display: none;
+  width: 100%;
+}
+
+.case2-hero-tablet .case2-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile Hero (<=767px) */
+.case2-hero-mobile {
+  display: none;
+  width: 100%;
+}
+
+.case2-hero-mobile .case2-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .case2-hero-desktop {
+    display: none;
+  }
+  
+  .case2-hero-tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .case2-hero-tablet {
+    display: none;
+  }
+  
+  .case2-hero-mobile {
+    display: block;
+  }
+}
+
+/* Old Case 2 */
+.case2-old-case {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.case2-old-case-label {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-gray-light);
+  letter-spacing: -0.5px;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.case2-old-case-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile styles for label */
+@media (max-width: 767px) {
+  .case2-old-case-label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+}
+
+/* New Case 2 */
+.case2-new-case {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.case2-new-case-label {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-gray-light);
+  letter-spacing: -0.5px;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.case2-new-case-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile styles for new case label */
+@media (max-width: 767px) {
+  .case2-new-case-label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+}
+
+/* Screen Case 2 */
+.case2-screen {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.case2-screen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Map Screen Case 2 */
+.case2-map-screen {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.case2-map-screen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Placeholder content styles */
+.case2-content {
+  padding: 120px;
+  text-align: center;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.case2-content h1 {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.case2-content p {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #b3b3b3;
+  margin: 0;
+}

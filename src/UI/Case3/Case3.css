@@ -1,0 +1,272 @@
+/* Case3 component styles based on Case1 design */
+
+.case3 {
+  width: 100%;
+  background-color: var(--color-page-bg);
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop Hero (>=1025px) */
+.case3-hero-desktop {
+  display: block;
+  width: 100%;
+}
+
+.case3-hero-desktop .case3-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet Hero (768px-1024px) */
+.case3-hero-tablet {
+  display: none;
+  width: 100%;
+}
+
+.case3-hero-tablet .case3-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile Hero (<=767px) */
+.case3-hero-mobile {
+  display: none;
+  width: 100%;
+}
+
+.case3-hero-mobile .case3-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* UI Elements Section */
+.case3-ui-elements {
+  width: 100%;
+  background-color: var(--color-page-bg);
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop UI Elements (>=1025px) */
+.case3-ui-elements-desktop {
+  display: block;
+  width: 100%;
+}
+
+.case3-ui-elements-desktop .case3-ui-elements-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet UI Elements (768px-1024px) */
+.case3-ui-elements-tablet {
+  display: none;
+  width: 100%;
+}
+
+.case3-ui-elements-tablet .case3-ui-elements-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile UI Elements (<=767px) */
+.case3-ui-elements-mobile {
+  display: none;
+  width: 100%;
+}
+
+.case3-ui-elements-mobile .case3-ui-elements-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .case3-hero-desktop {
+    display: none;
+  }
+  
+  .case3-hero-tablet {
+    display: block;
+  }
+
+  .case3-ui-elements-desktop {
+    display: none;
+  }
+  
+  .case3-ui-elements-tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .case3-hero-tablet {
+    display: none;
+  }
+  
+  .case3-hero-mobile {
+    display: block;
+  }
+
+  .case3-ui-elements-tablet {
+    display: none;
+  }
+  
+  .case3-ui-elements-mobile {
+    display: block;
+  }
+}
+
+/* Video Section */
+.case3-video {
+  width: 100%;
+  background: var(--color-page-bg);
+  padding: 80px 0;
+}
+
+.case3-video-label {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-gray-light);
+  letter-spacing: -0.5px;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.case3-video-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.case3-video-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--spacing-120);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.case3-video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-12);
+}
+
+/* Скрываем элементы управления Vimeo */
+.case3-video-iframe {
+  pointer-events: none;
+}
+
+/* Tablet fluid 1025–1440: side paddings 16px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .case3-video-wrapper {
+    padding: 0 var(--spacing-16);
+  }
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .case3-video {
+    padding: 64px 0;
+  }
+  .case3-video-wrapper {
+    padding: 0 var(--spacing-16);
+  }
+}
+
+/* Mobile styles for video label */
+@media (max-width: 767px) {
+  .case3-video-label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+}
+
+/* Phone Carousel Section */
+.case3-phone-carousel {
+  width: 100%;
+  background: var(--color-page-bg);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.phone-carousel-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+  position: relative;
+}
+
+.phone-carousel-track {
+  display: flex;
+  gap: 24px;
+  animation: phoneCarousel 30s linear infinite;
+  width: fit-content;
+  --carousel-width: calc(6 * (400px + 24px) - 24px); /* 6 images + gaps */
+}
+
+.phone-carousel-img {
+  flex-shrink: 0;
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+@keyframes phoneCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .phone-carousel-container {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 1024px) {
+  .case3-phone-carousel {
+    padding: 64px 0;
+  }
+  
+  .phone-carousel-container {
+    padding: 0 16px;
+  }
+  
+  .phone-carousel-img {
+    height: 300px;
+  }
+  
+  .phone-carousel-track {
+    gap: 16px;
+  }
+  
+  @keyframes phoneCarousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

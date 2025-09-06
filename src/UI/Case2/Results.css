@@ -1,0 +1,59 @@
+/* Results component styles */
+.results {
+  /* Inherits base styles from Problem component */
+}
+
+.results-section {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.results-label {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.results-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.results-point {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.results-point-bold {
+  font-family: var(--font-family-inter);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .results-label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+  
+  .results-point {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+}

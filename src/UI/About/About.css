@@ -1,0 +1,56 @@
+.about { width: 100%; background: var(--color-page-bg); }
+
+/* Desktop/Tablet */
+.about-desktop { display: block; }
+.about-mobile { display: none; }
+
+.about-desktop-content {
+  max-width: 1440px; /* 1200 + 120 */
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px var(--spacing-120);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-40);
+}
+
+.about-heading {
+  font-size: var(--font-size-32);
+  line-height: var(--line-height-32);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.about-section { display: grid; grid-template-columns: 240px 1fr; column-gap: var(--spacing-32); }
+.about-label { color: var(--color-gray-light); text-transform: uppercase; font-size: var(--font-size-16); line-height: var(--line-height-18); }
+.about-body { max-width: 960px; display: flex; flex-direction: column; gap: var(--spacing-24); }
+.about-body.intro { max-width: 460px; }
+.about-body p { color: var(--color-white); font-size: var(--font-size-18); line-height: var(--line-height-22); letter-spacing: var(--letter-spacing-xs); }
+
+.exp-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--spacing-24); }
+.exp-title, .exp-company, .exp-dates { color: var(--color-white); font-size: var(--font-size-16); line-height: var(--line-height-18); }
+
+/* Tablet fluid 1025–1440: 16px paddings */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .about-desktop-content { max-width: 100%; padding: 80px var(--spacing-16); }
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .about-desktop { display: none; }
+  .about-mobile { display: block; }
+  .about-mobile-content {
+    width: 100%;
+    padding: 64px var(--spacing-16);
+    display: flex; flex-direction: column; gap: var(--spacing-32);
+  }
+  .about-section { display: flex; flex-direction: column; gap: var(--spacing-16); }
+  .about-heading { font-size: var(--font-size-24); line-height: var(--line-height-24); }
+  .about-label { font-size: var(--font-size-16); line-height: var(--line-height-18); }
+  .about-body p { font-size: var(--font-size-16); line-height: var(--line-height-20); }
+  .about-body.intro { max-width: 320px; }
+  .exp-group { display: flex; flex-direction: column; gap: var(--spacing-24); }
+  .exp-line p { margin: 0; }
+}
+
+

@@ -1,0 +1,154 @@
+/* Problem component styles based on Figma design */
+
+.problem {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1441px) */
+.problem-desktop {
+  display: block;
+  padding: 120px;
+}
+
+.problem-desktop .problem-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.problem-desktop .problem-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.problem-desktop .problem-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet (768px-1440px) */
+.problem-tablet {
+  display: none;
+  padding: 120px 16px;
+}
+
+.problem-tablet .problem-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.problem-tablet .problem-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.problem-tablet .problem-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Mobile (<=767px) */
+.problem-mobile {
+  display: none;
+  padding: 64px 16px;
+}
+
+.problem-mobile .problem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.problem-mobile .problem-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.problem-mobile .problem-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styles */
+.problem-title {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.problem-text {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Mobile specific styles */
+.problem-mobile .problem-title {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.problem-mobile .problem-text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .problem-desktop {
+    display: none;
+  }
+  
+  .problem-tablet {
+    display: block;
+  }
+  
+  .problem-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .problem-desktop {
+    display: none;
+  }
+  
+  .problem-tablet {
+    display: none;
+  }
+  
+  .problem-mobile {
+    display: block;
+  }
+}

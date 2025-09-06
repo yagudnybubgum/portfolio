@@ -1,0 +1,297 @@
+/* Footer component styles based on Figma design system */
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Base footer styles */
+.footer {
+  background-color: var(--color-page-bg);
+  width: 100%;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop Footer (1440px+) */
+.footer-desktop {
+  padding: var(--spacing-120) 0 var(--spacing-24) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  align-items: center; /* Центрируем контент */
+  justify-content: flex-end;
+}
+
+.footer-desktop .desktop-content {
+  /* 1440 = 1200 content + 120px paddings по бокам */
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  align-items: flex-start;
+  padding: 0 var(--spacing-120); /* Отступы по 120px с каждой стороны */
+  margin: 0 auto; /* центрирование как у шапки на десктопе */
+}
+
+.footer-desktop h2 {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-32);
+  line-height: var(--line-height-32);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left; /* Выравнивание по левому краю */
+}
+
+.footer-desktop .container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-desktop .text {
+  max-width: 550px;
+  min-width: 550px;
+}
+
+.footer-desktop .text p {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-22);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-small);
+  margin: 0;
+  text-align: left; /* Выравнивание по левому краю */
+}
+
+.footer-desktop .email-button-container {
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-32);
+  align-items: center;
+}
+
+.footer-desktop .email {
+  background-color: var(--color-gray-bg);
+  max-width: 300px;
+  width: 251px;
+  height: 37px;
+  padding: 9px var(--spacing-20) 10px var(--spacing-20);
+  border-radius: var(--border-radius-140);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрирую email по горизонтали */
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.footer-desktop .email:hover {
+  background-color: rgba(191, 191, 191, 0.2);
+}
+
+.footer-desktop .email span {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-18);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  white-space: pre;
+  text-align: center; /* Дополнительное центрирование текста */
+}
+
+.footer-desktop .download-button {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-18);
+  color: var(--color-gray-light);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.footer-desktop .download-button:hover {
+  color: var(--color-white);
+}
+
+/* удалил социальный контейнер — кнопки идут в одной строке */
+
+.footer-desktop .social-button {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-18);
+  color: var(--color-gray-light);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.footer-desktop .social-button:hover {
+  color: var(--color-white);
+}
+
+/* Mobile Footer (below 1440px) */
+.footer-mobile {
+  padding: var(--spacing-80) var(--spacing-16) var(--spacing-24) var(--spacing-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.footer-mobile h2 {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-24);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-medium);
+  text-transform: uppercase;
+  text-align: left; /* Выравнивание по левому краю */
+  margin-bottom: var(--spacing-16); /* Дополнительный отступ снизу */
+}
+
+.footer-mobile .contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.footer-mobile .text p {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-20);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-xs);
+  width: 100%;
+  margin: 0;
+  text-align: left; /* Выравнивание по левому краю */
+}
+
+.footer-mobile .email-button-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-24);
+  align-items: center;
+}
+
+.footer-mobile .email {
+  background-color: var(--color-gray-bg);
+  max-width: 300px;
+  width: 251px;
+  height: 37px;
+  padding: 9px var(--spacing-20) 10px var(--spacing-20);
+  border-radius: var(--border-radius-140);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрирую email по горизонтали */
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.footer-mobile .email:hover {
+  background-color: rgba(191, 191, 191, 0.2);
+}
+
+.footer-mobile .email span {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-18);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  white-space: pre;
+  text-align: center; /* Дополнительное центрирование текста */
+}
+
+.footer-mobile .download-button {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-16);
+  color: var(--color-gray-light);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.footer-mobile .download-button:hover {
+  color: var(--color-white);
+}
+
+/* соц-кнопки более не отдельным блоком */
+
+.footer-mobile .social-button {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-16);
+  color: var(--color-gray-light);
+  letter-spacing: var(--letter-spacing-small);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.footer-mobile .social-button:hover {
+  color: var(--color-white);
+}
+
+/* удалены нав-секции — по макету их нет */
+
+/* Responsive breakpoints */
+/* Desktop начиная с 1025px */
+@media (min-width: 1025px) {
+  .footer-desktop {
+    display: block;
+  }
+  
+  .footer-mobile {
+    display: none;
+  }
+}
+
+/* Mobile до и включая 1024px */
+@media (max-width: 1024px) {
+  .footer-desktop {
+    display: none;
+  }
+  
+  .footer-mobile {
+    display: block;
+  }
+}
+
+/* Tablet / fluid: 1025px–1440px with 16px side paddings */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer-desktop .desktop-content {
+    max-width: 100%;
+    padding: 0 var(--spacing-16);
+  }
+}

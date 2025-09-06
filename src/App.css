@@ -1,5 +1,24 @@
 .App {
-  text-align: center;
+  background-color: var(--color-page-bg);
+  min-height: 100vh;
+  width: 100%;
+  font-family: var(--font-family-inter);
+  padding-top: 52px; /* Отступ для фиксированного хедера */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: #141414;
 }
 
 .App-logo {
@@ -34,5 +53,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Мобильные устройства - меньший отступ для хедера */
+@media (max-width: 1024px) {
+  .App {
+    padding-top: 48.8px;
   }
 }

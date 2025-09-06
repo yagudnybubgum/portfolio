@@ -1,0 +1,131 @@
+/* Highlight component styles based on Figma design */
+
+.highlight {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1025px) */
+.highlight-desktop {
+  display: block;
+  padding: 40px 120px;
+}
+
+.highlight-desktop .highlight-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.highlight-desktop .highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 268px;
+}
+
+.highlight-desktop .highlight-card:nth-child(2) {
+  width: 270px;
+}
+
+.highlight-desktop .highlight-card:nth-child(3) {
+  width: 271px;
+}
+
+.highlight-desktop .highlight-card:nth-child(4) {
+  width: 268px;
+}
+
+/* Tablet (768px-1024px) */
+.highlight-tablet {
+  display: none;
+  padding: 40px 16px;
+}
+
+.highlight-tablet .highlight-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.highlight-tablet .highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Mobile (<=767px) */
+.highlight-mobile {
+  display: none;
+  padding: 40px 16px;
+}
+
+.highlight-mobile .highlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.highlight-mobile .highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Common styles */
+.highlight-title {
+  font-family: var(--font-family-inter);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.highlight-description {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .highlight-desktop {
+    display: none;
+  }
+  
+  .highlight-tablet {
+    display: block;
+  }
+  
+  .highlight-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .highlight-desktop {
+    display: none;
+  }
+  
+  .highlight-tablet {
+    display: none;
+  }
+  
+  .highlight-mobile {
+    display: block;
+  }
+}

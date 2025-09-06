@@ -1,0 +1,201 @@
+/* Hypotheses component styles based on Figma design */
+
+.hypotheses {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+}
+
+/* Desktop (>=1441px) */
+.hypotheses-desktop {
+  display: block;
+  padding: 120px;
+}
+
+.hypotheses-desktop .hypotheses-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hypotheses-desktop .hypotheses-title-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hypotheses-desktop .hypotheses-text-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet (768px-1440px) */
+.hypotheses-tablet {
+  display: none;
+  padding: 120px 16px;
+}
+
+.hypotheses-tablet .hypotheses-content {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.hypotheses-tablet .hypotheses-title-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.hypotheses-tablet .hypotheses-text-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Mobile (<=767px) */
+.hypotheses-mobile {
+  display: none;
+  padding: 64px 16px;
+}
+
+.hypotheses-mobile .hypotheses-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.hypotheses-mobile .hypotheses-title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hypotheses-mobile .hypotheses-text-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styles */
+.hypotheses-title {
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+.hypotheses-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hypotheses-intro,
+.hypotheses-conclusion {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hypotheses-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hypotheses-point {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hypotheses-point-bold {
+  font-family: var(--font-family-inter);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+/* Mobile specific styles */
+.hypotheses-mobile .hypotheses-title {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.hypotheses-mobile .hypotheses-intro,
+.hypotheses-mobile .hypotheses-conclusion {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+.hypotheses-mobile .hypotheses-point {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+.hypotheses-mobile .hypotheses-point-bold {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .hypotheses-desktop {
+    display: none;
+  }
+  
+  .hypotheses-tablet {
+    display: block;
+  }
+  
+  .hypotheses-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hypotheses-desktop {
+    display: none;
+  }
+  
+  .hypotheses-tablet {
+    display: none;
+  }
+  
+  .hypotheses-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,111 @@
+/* Case2 Navigation component styles */
+
+.case2-navigation {
+  width: 100%;
+  background-color: #141414;
+  font-family: var(--font-family-inter);
+  padding: 120px 0;
+}
+
+/* Desktop (>=1441px) */
+.case2-nav-desktop {
+  display: block;
+}
+
+.case2-nav-desktop .case2-nav-content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+}
+
+/* Tablet (768px-1440px) */
+.case2-nav-tablet {
+  display: none;
+}
+
+.case2-nav-tablet .case2-nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Mobile (<=767px) */
+.case2-nav-mobile {
+  display: none;
+}
+
+.case2-nav-mobile .case2-nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Button styles */
+.case2-nav-button {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #b3b3b3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+}
+
+.case2-nav-button:hover {
+  color: #ffffff;
+}
+
+.case2-nav-button:focus {
+  outline: none;
+}
+
+/* Mobile specific styles */
+.case2-nav-mobile .case2-nav-button {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1440px) and (min-width: 768px) {
+  .case2-nav-desktop {
+    display: none;
+  }
+  
+  .case2-nav-tablet {
+    display: block;
+  }
+  
+  .case2-nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .case2-nav-desktop {
+    display: none;
+  }
+  
+  .case2-nav-tablet {
+    display: none;
+  }
+  
+  .case2-nav-mobile {
+    display: block;
+  }
+  
+  .case2-navigation {
+    padding: 64px 0;
+  }
+}

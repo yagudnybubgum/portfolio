@@ -1,0 +1,125 @@
+/* Global CSS Variables based on Figma Design System */
+
+:root {
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+
+  /* Colors */
+  --color-page-bg: rgba(20, 20, 20, 1); /* #141414 */
+  --color-white: rgba(255, 255, 255, 1); /* #ffffff */
+  --color-gray-light: rgba(179, 179, 179, 1); /* #b3b3b3 */
+  --color-gray-dark: rgba(51, 51, 51, 1); /* #333333 */
+  --color-gray-bg: rgba(191, 191, 191, 0.1); /* #bfbfbf1a */
+
+  /* Typography */
+  --font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  
+  /* Font Sizes */
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-30: 30px;
+  --font-size-32: 32px;
+  --font-size-40: 40px;
+  --font-size-56: 56px;
+  --font-size-64: 64px;
+  
+  /* Line Heights */
+  --line-height-16: 16px;
+  --line-height-18: 18px;
+  --line-height-20: 20px;
+  --line-height-22: 22px;
+  --line-height-24: 24px;
+  --line-height-30: 30px;
+  --line-height-32: 32px;
+  --line-height-40: 40px;
+  --line-height-56: 56px;
+  --line-height-64: 64px;
+  --line-height-80: 80px;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -1.2px;
+  --letter-spacing-medium: -1px;
+  --letter-spacing-small: -0.5px;
+  --letter-spacing-xs: -0.3px;
+  
+  /* Border Radius */
+  --border-radius-140: 140px;
+  --border-radius-12: 12px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  
+  /* Shadows */
+  --shadow-none: none;
+  
+  /* Z-index */
+  --z-index-base: 1;
+  --z-index-dropdown: 1000;
+  --z-index-modal: 2000;
+  --z-index-tooltip: 3000;
+}
+
+/* Utility classes for common values */
+.text-white { color: var(--color-white); }
+.text-gray-light { color: var(--color-gray-light); }
+.text-gray-dark { color: var(--color-gray-dark); }
+
+.bg-page { background-color: var(--color-page-bg); }
+.bg-white { background-color: var(--color-white); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.bg-gray-dark { background-color: var(--color-gray-dark); }
+.bg-gray-bg { background-color: var(--color-gray-bg); }
+
+.font-inter { font-family: var(--font-family-inter); }
+.font-regular { font-weight: var(--font-weight-regular); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+
+/* Spacing utility classes */
+.p-4 { padding: var(--spacing-4); }
+.p-8 { padding: var(--spacing-8); }
+.p-16 { padding: var(--spacing-16); }
+.p-20 { padding: var(--spacing-20); }
+.p-24 { padding: var(--spacing-24); }
+.p-32 { padding: var(--spacing-32); }
+.p-40 { padding: var(--spacing-40); }
+.p-64 { padding: var(--spacing-64); }
+.p-80 { padding: var(--spacing-80); }
+.p-120 { padding: var(--spacing-120); }
+
+.m-4 { margin: var(--spacing-4); }
+.m-8 { margin: var(--spacing-8); }
+.m-16 { margin: var(--spacing-16); }
+.m-20 { margin: var(--spacing-20); }
+.m-24 { margin: var(--spacing-24); }
+.m-32 { margin: var(--spacing-32); }
+.m-40 { margin: var(--spacing-40); }
+.m-64 { margin: var(--spacing-64); }
+.m-80 { margin: var(--spacing-80); }
+.m-120 { margin: var(--spacing-120); }
+
+.gap-4 { gap: var(--spacing-4); }
+.gap-8 { gap: var(--spacing-8); }
+.gap-16 { gap: var(--spacing-16); }
+.gap-20 { gap: var(--spacing-20); }
+.gap-24 { gap: var(--spacing-24); }
+.gap-32 { gap: var(--spacing-32); }
+.gap-40 { gap: var(--spacing-40); }
+.gap-64 { gap: var(--spacing-64); }
+.gap-80 { gap: var(--spacing-80); }
+.gap-120 { gap: var(--spacing-120); }

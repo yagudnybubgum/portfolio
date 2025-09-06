@@ -1,0 +1,94 @@
+/* API component styles */
+.api {
+  /* Inherits base styles from Problem component */
+}
+
+.api-points {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.api-point {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.api-point-bold {
+  font-family: var(--font-family-inter);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* Refs Case 2 Image */
+.api-refs-desktop {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 64px;
+  display: block;
+}
+
+.api-refs-tablet {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 64px;
+  display: none;
+}
+
+.api-refs-mobile {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 64px;
+  display: none;
+}
+
+.api-refs-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet styles */
+@media (max-width: 1439px) and (min-width: 768px) {
+  .api-refs-desktop {
+    display: none;
+  }
+  
+  .api-refs-tablet {
+    display: block;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .api-refs-desktop {
+    display: none;
+  }
+  
+  .api-refs-tablet {
+    display: none;
+  }
+  
+  .api-refs-mobile {
+    display: block;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .api-point {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+}
