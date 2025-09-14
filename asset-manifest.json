@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c48787b.css",
-    "main.js": "/static/js/main.bb8e0ea2.js",
-    "static/js/453.b24434a0.chunk.js": "/static/js/453.b24434a0.chunk.js",
-    "static/media/Inter-Black.ttf": "/static/media/Inter-Black.54c4088fddcfe5fabaca.ttf",
-    "static/media/Inter-ExtraBold.ttf": "/static/media/Inter-ExtraBold.55189ddfcadbb76776b5.ttf",
-    "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.3e3cb905bf27a4c8c370.ttf",
-    "static/media/Inter-SemiBold.ttf": "/static/media/Inter-SemiBold.c6588ec1e3a1f399c5c0.ttf",
-    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.18b8c68e64126db9ce88.ttf",
-    "static/media/Inter-Thin.ttf": "/static/media/Inter-Thin.dbd13499cc67a42d9f20.ttf",
-    "static/media/Inter-ExtraLight.ttf": "/static/media/Inter-ExtraLight.19c859e32d783f228f53.ttf",
-    "static/media/Inter-Light.ttf": "/static/media/Inter-Light.e7dd1399358ca04ed457.ttf",
-    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.9cd7588f47651215d52f.ttf",
-    "index.html": "/index.html",
-    "main.8c48787b.css.map": "/static/css/main.8c48787b.css.map",
-    "main.bb8e0ea2.js.map": "/static/js/main.bb8e0ea2.js.map",
-    "453.b24434a0.chunk.js.map": "/static/js/453.b24434a0.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.980e83fe.css",
+    "main.js": "/portfolio/static/js/main.95e797cb.js",
+    "static/js/453.b24434a0.chunk.js": "/portfolio/static/js/453.b24434a0.chunk.js",
+    "static/media/Inter-Black.ttf": "/portfolio/static/media/Inter-Black.54c4088fddcfe5fabaca.ttf",
+    "static/media/Inter-ExtraBold.ttf": "/portfolio/static/media/Inter-ExtraBold.55189ddfcadbb76776b5.ttf",
+    "static/media/Inter-Bold.ttf": "/portfolio/static/media/Inter-Bold.3e3cb905bf27a4c8c370.ttf",
+    "static/media/Inter-SemiBold.ttf": "/portfolio/static/media/Inter-SemiBold.c6588ec1e3a1f399c5c0.ttf",
+    "static/media/Inter-Medium.ttf": "/portfolio/static/media/Inter-Medium.18b8c68e64126db9ce88.ttf",
+    "static/media/Inter-Thin.ttf": "/portfolio/static/media/Inter-Thin.dbd13499cc67a42d9f20.ttf",
+    "static/media/Inter-ExtraLight.ttf": "/portfolio/static/media/Inter-ExtraLight.19c859e32d783f228f53.ttf",
+    "static/media/Inter-Light.ttf": "/portfolio/static/media/Inter-Light.e7dd1399358ca04ed457.ttf",
+    "static/media/Inter-Regular.ttf": "/portfolio/static/media/Inter-Regular.9cd7588f47651215d52f.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.980e83fe.css.map": "/portfolio/static/css/main.980e83fe.css.map",
+    "main.95e797cb.js.map": "/portfolio/static/js/main.95e797cb.js.map",
+    "453.b24434a0.chunk.js.map": "/portfolio/static/js/453.b24434a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c48787b.css",
-    "static/js/main.bb8e0ea2.js"
+    "static/css/main.980e83fe.css",
+    "static/js/main.95e797cb.js"
   ]
 }
